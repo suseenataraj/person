@@ -1,0 +1,106 @@
+[*] starting @ 23:14:57 /2022-11-17/
+
+do you want to check for the existence of site's sitemap(.xml) [y/N] y
+[23:14:59] [INFO] 23 links found
+[23:14:59] [INFO] starting crawler for target URL 'https://tools.apgy.in/'
+[23:14:59] [INFO] searching for links with depth 1
+[23:15:05] [INFO] 7/23 links visited (30%)
+got a refresh intent (redirect like response common to login pages) to '+url+'. Do you want to apply it from now on? [Y/n] y
+[23:15:11] [INFO] searching for links with depth 2                                                                                                                   
+please enter number of threads? [Enter for 1 (current)] 1
+[23:15:17] [WARNING] running in a single-thread mode. This could take a while
+[23:15:29] [INFO] searching for links with depth 3                                                                                                                   
+please enter number of threads? [Enter for 1 (current)] 1
+[23:15:35] [WARNING] running in a single-thread mode. This could take a while
+[23:15:44] [INFO] searching for links with depth 4                                                                                                                   
+please enter number of threads? [Enter for 1 (current)] 1
+[23:16:29] [WARNING] running in a single-thread mode. This could take a while
+[23:16:39] [INFO] searching for links with depth 5                                                                                                                   
+please enter number of threads? [Enter for 1 (current)] 
+[23:16:45] [WARNING] running in a single-thread mode. This could take a while
+do you want to normalize crawling results [Y/n] y                                                                                                                    
+do you want to store crawling results to a temporary file for eventual further processing with other tools [y/N] n
+[23:17:10] [INFO] found a total of 4 targets
+[1/4] URL:
+GET https://tools.apgy.in/tool/youtube-thumbnail-downloader/ https:/wa.me/?text=YouTube Thumbnail Downloader: https://tools.apgy.in/tool/youtube-thumbnail-downloader/
+do you want to test this URL? [Y/n/q]
+> y
+[23:17:15] [INFO] testing URL 'https://tools.apgy.in/tool/youtube-thumbnail-downloader/ https:/wa.me/?text=YouTube Thumbnail Downloader: https://tools.apgy.in/tool/youtube-thumbnail-downloader/'                                                                                                                                          
+[23:17:15] [INFO] using '/home/vudinchi/.local/share/sqlmap/output/results-11172022_1117pm.csv' as the CSV results file in multiple targets mode
+[23:17:15] [INFO] testing connection to the target URL
+you have not declared cookie(s), while server wants to set its own ('PHPSESSID=b33f831af1d...ebca60fa97'). Do you want to use those [Y/n] y
+[23:17:33] [INFO] checking if the target is protected by some kind of WAF/IPS
+[23:17:34] [WARNING] reflective value(s) found and filtering out
+[23:17:34] [INFO] testing if the target URL content is stable
+[23:17:34] [WARNING] target URL content is not stable (i.e. content differs). sqlmap will base the page comparison on a sequence matcher. If no dynamic nor injectable parameters are detected, or in case of junk results, refer to user's manual paragraph 'Page comparison'
+how do you want to proceed? [(C)ontinue/(s)tring/(r)egex/(q)uit] c
+[23:17:37] [INFO] testing if GET parameter 'text' is dynamic
+[23:17:37] [WARNING] GET parameter 'text' does not appear to be dynamic
+[23:17:38] [WARNING] heuristic (basic) test shows that GET parameter 'text' might not be injectable
+[23:17:39] [INFO] testing for SQL injection on GET parameter 'text'
+[23:17:39] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[23:17:41] [INFO] GET parameter 'text' appears to be 'AND boolean-based blind - WHERE or HAVING clause' injectable (with --string="        Smoking can void your Apple product warranties    ")
+[23:17:45] [INFO] heuristic (extended) test shows that the back-end DBMS could be 'Raima Database Manager' 
+it looks like the back-end DBMS is 'Raima Database Manager'. Do you want to skip test payloads specific for other DBMSes? [Y/n] y
+for the remaining tests, do you want to include all tests for 'Raima Database Manager' extending provided level (1) and risk (1) values? [Y/n] y
+[23:26:19] [INFO] testing 'Generic inline queries'
+[23:26:19] [INFO] testing 'Generic UNION query (NULL) - 1 to 20 columns'
+[23:26:19] [INFO] automatically extending ranges for UNION query injection technique tests as there is at least one other (potential) technique found
+[23:26:24] [INFO] target URL appears to be UNION injectable with 5 columns
+injection not exploitable with NULL values. Do you want to try with a random integer value for option '--union-char'? [Y/n] y
+[23:26:41] [WARNING] if UNION based SQL injection is not detected, please consider forcing the back-end DBMS (e.g. '--dbms=mysql') 
+[23:26:41] [INFO] checking if the injection point on GET parameter 'text' is a false positive
+[23:26:42] [WARNING] false positive or unexploitable injection point detected
+[23:26:42] [WARNING] GET parameter 'text' does not seem to be injectable
+[23:26:42] [ERROR] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. Also, you can try to rerun by providing a valid value for option '--string' as perhaps the string you have chosen does not match exclusively True responses. If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could try to use option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent', skipping to the next target                                                                                                                              
+[2/4] URL:
+GET https://tools.apgy.in/tool/url-encoder/ https:/wa.me/?text=URL Encoder & Cheet sheet: https://tools.apgy.in/tool/url-encoder/
+do you want to test this URL? [Y/n/q]
+> y
+[23:26:47] [INFO] testing URL 'https://tools.apgy.in/tool/url-encoder/ https:/wa.me/?text=URL Encoder & Cheet sheet: https://tools.apgy.in/tool/url-encoder/'
+[23:26:47] [INFO] testing connection to the target URL
+you have not declared cookie(s), while server wants to set its own ('PHPSESSID=c1dadb733c0...f0bc6afca7'). Do you want to use those [Y/n] y
+[23:26:51] [INFO] checking if the target is protected by some kind of WAF/IPS
+[23:26:52] [WARNING] reflective value(s) found and filtering out
+[23:26:52] [INFO] testing if the target URL content is stable
+[23:26:53] [WARNING] target URL content is not stable (i.e. content differs). sqlmap will base the page comparison on a sequence matcher. If no dynamic nor injectable parameters are detected, or in case of junk results, refer to user's manual paragraph 'Page comparison'
+how do you want to proceed? [(C)ontinue/(s)tring/(r)egex/(q)uit] c
+[23:26:55] [INFO] testing if GET parameter 'text' is dynamic
+[23:26:57] [WARNING] GET parameter 'text' does not appear to be dynamic
+[23:26:58] [WARNING] heuristic (basic) test shows that GET parameter 'text' might not be injectable
+[23:27:00] [INFO] testing for SQL injection on GET parameter 'text'
+[23:27:00] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[23:27:08] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[23:27:09] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[23:27:11] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[23:27:13] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[23:27:14] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[23:27:16] [INFO] testing 'Generic inline queries'
+[23:27:16] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[23:27:17] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[23:27:18] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[23:27:19] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[23:27:20] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[23:27:22] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[23:27:23] [INFO] testing 'Oracle AND time-based blind'
+it is recommended to perform only basic UNION tests if there is not at least one other (potential) technique found. Do you want to reduce the number of requests? [Y/n] n
+[23:27:30] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[23:27:49] [WARNING] GET parameter 'text' does not seem to be injectable
+[23:27:49] [ERROR] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could try to use option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent', skipping to the next target
+[3/4] URL:
+GET https://tools.apgy.in/side/download-pw.php?pw=Generate a Password First
+do you want to test this URL? [Y/n/q]
+> y
+[23:28:02] [INFO] testing URL 'https://tools.apgy.in/side/download-pw.php?pw=Generate a Password First'
+[23:28:02] [INFO] testing connection to the target URL
+[23:28:02] [ERROR] can't establish SSL connection, skipping to the next target
+[4/4] URL:
+GET https://tools.apgy.in/tool/random-password-generator/?ref=downloaded
+do you want to test this URL? [Y/n/q]
+> y
+[23:28:14] [INFO] testing URL 'https://tools.apgy.in/tool/random-password-generator/?ref=downloaded'
+[23:28:14] [INFO] testing connection to the target URL
+[23:28:14] [ERROR] can't establish SSL connection, skipping to the next target
+[23:28:14] [INFO] you can find results of scanning in multiple targets mode inside the CSV file '/home/vudinchi/.local/share/sqlmap/output/results-11172022_1117pm.csv'
+
+[*] ending @ 23:28:14 /2022-11-17/
